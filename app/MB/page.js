@@ -19,7 +19,8 @@ const MBPage = () => {
                 URL.revokeObjectURL(ttsAudioUrl);
             }
         };
-    }, []);
+    }, [audioUrl, ttsAudioUrl]); // 添加依赖项
+
 
     const fetchAudio = async () => {
         try {
@@ -58,21 +59,23 @@ const MBPage = () => {
 
     return (
         <div>
-            <MBComponent />
-            {audioUrl && (
-                <audio controls>
-                    <source src={audioUrl} type="audio/mpeg" />
-                    您的浏览器不支持音频元素。
-                </audio>
-            )}
-            <button onClick={() => playTTS('你好，世界！')}>播放 TTS</button>
-            {ttsAudioUrl && (
-                <audio controls>
-                    <source src={ttsAudioUrl} type="audio/mpeg" />
-                    您的浏览器不支持音频元素。
-                </audio>
-            )}
-        </div>
+        <MBComponent />
+        {audioUrl && (
+            <audio controls>
+                <source src={audioUrl} type="audio/mpeg" />
+                <track kind="captions" src="/path/to/captions.vtt" srclang="zh-CN" label="中文" /> 
+                您的浏览器不支持音频元素。
+            </audio>
+        )}
+        <button onClick={() => playTTS('你好，世界！')}>播放 TTS</button>
+        {ttsAudioUrl && (
+            <audio controls>
+                <source src={ttsAudioUrl} type="audio/mpeg" />
+                <track kind="captions" src="/path/to/tts-captions.vtt" srclang="zh-CN" label="中文" /> 
+                您的浏览器不支持音频元素。
+            </audio>
+        )}
+    </div>
     );
 };
 
