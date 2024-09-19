@@ -18,7 +18,7 @@ export default function MBapp() {
       <nav className="w-64 bg-gray-800 text-white">
         <ul className="py-4">
           {menuItems.map((item) => (
-            <li
+            <button 
               key={item.title}
               className={`flex items-center px-4 py-2 cursor-pointer ${
                 activeItem === item ? 'bg-gray-700' : 'hover:bg-gray-700'
@@ -27,7 +27,7 @@ export default function MBapp() {
             >
               <item.icon className="h-6 w-6 mr-3" />
               <span>{item.title}</span>
-            </li>
+            </button>
           ))}
         </ul>
       </nav>
