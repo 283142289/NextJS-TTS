@@ -1,4 +1,5 @@
 import Th_box from './th-box'
+import Image from 'next/image'
 
 const A_side = () => {
     return (
@@ -13,7 +14,7 @@ const A_side = () => {
   
   <ul class="divide-y divide-gray-200">
     <li class="flex items-center p-4 hover:bg-gray-100 transition duration-300 ease-in-out">
-      <img class="w-12 h-12 rounded-full object-cover mr-4" src="/static/images/sparrowhawk-avatar.jpg" alt="Teacher 1" />
+      <Image  class="w-12 h-12 rounded-full object-cover mr-4" src="/static/images/sparrowhawk-avatar.jpg" alt="Teacher 1" />
       <div class="flex-grow">
         <h3 class="text-lg font-medium text-gray-800">Marvin Hawkins</h3>
         <p class="text-sm text-gray-600">5 years experience</p>
@@ -22,7 +23,7 @@ const A_side = () => {
     </li>
     
     <li class="flex items-center p-4 hover:bg-gray-100 transition duration-300 ease-in-out">
-      <img class="w-12 h-12 rounded-full object-cover mr-4" src="/static/images/sparrowhawk-avatar.jpg" alt="Teacher 2" />
+      <Image  class="w-12 h-12 rounded-full object-cover mr-4" src="/static/images/sparrowhawk-avatar.jpg" alt="Teacher 2" />
       <div class="flex-grow">
         <h3 class="text-lg font-medium text-gray-800">Arthur Mckinney</h3>
         <p class="text-sm text-gray-600">6 years experience</p>
@@ -31,7 +32,7 @@ const A_side = () => {
     </li>
     
     <li class="flex items-center p-4 hover:bg-gray-100 transition duration-300 ease-in-out">
-      <img class="w-12 h-12 rounded-full object-cover mr-4" src="/static/images/sparrowhawk-avatar.jpg" alt="Teacher 3" />
+      <Image  class="w-12 h-12 rounded-full object-cover mr-4" src="/static/images/sparrowhawk-avatar.jpg" alt="Teacher 3" />
       <div class="flex-grow">
         <h3 class="text-lg font-medium text-gray-800">Bessie Watson</h3>
         <p class="text-sm text-gray-600">2 years experience</p>
@@ -40,7 +41,7 @@ const A_side = () => {
     </li>
     
     <li class="flex items-center p-4 hover:bg-gray-100 transition duration-300 ease-in-out">
-      <img class="w-12 h-12 rounded-full object-cover mr-4" src="/static/images/sparrowhawk-avatar.jpg" alt="Teacher 4" />
+      <Image  class="w-12 h-12 rounded-full object-cover mr-4" src="/static/images/sparrowhawk-avatar.jpg" alt="Teacher 4" />
       <div class="flex-grow">
         <h3 class="text-lg font-medium text-gray-800">Albert Bell</h3>
         <p class="text-sm text-gray-600">3 years experience</p>
