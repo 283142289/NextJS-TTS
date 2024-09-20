@@ -172,9 +172,7 @@ export default function News() {
           <button onClick={loadMoreNews} className="mt-4 px-4 py-2 bg-blue-500 text-white rounded">
             加载更多
           </button>
-            <p>process.env.NEXT_PUBLIC_SUPABASE_URL</p>
-                        <p>{process.env.NEXT_PUBLIC_SUPABASE_URL}</p>
-
+           
         </div>
       </div>
       <RecommendedNews/>
